@@ -46,7 +46,8 @@
       <service android:name="com.onesignal.ADMMessageHandler" android:exported="false" />
       <receiver
         android:name="com.onesignal.ADMMessageHandler$Receiver"
-        android:permission="com.amazon.device.messaging.permission.SEND" >
+        android:permission="com.amazon.device.messaging.permission.SEND"
+        android:exported="false" >
         <intent-filter>
           <action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
           <action android:name="com.amazon.device.messaging.intent.RECEIVE" />
