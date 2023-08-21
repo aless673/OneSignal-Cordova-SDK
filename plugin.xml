@@ -42,7 +42,7 @@
       <uses-permission android:name="$PACKAGE_NAME.permission.RECEIVE_ADM_MESSAGE" />
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false" xmlns:amazon="http://schemas.amazon.com/apk/res/android" />
+      <amazon:enable-feature android:exported="false" android:name="com.amazon.device.messaging" android:required="false" xmlns:amazon="http://schemas.amazon.com/apk/res/android" />
       <service android:name="com.onesignal.ADMMessageHandler" android:exported="false" />
       <receiver
         android:name="com.onesignal.ADMMessageHandler$Receiver"
